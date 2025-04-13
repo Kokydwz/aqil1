@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap');
+  :root {
+    --primary: #0061ff;
+    --plyr-color-main: #0061ff;
+    --bg-color: #ffffff;
+    --text-color: #0061ff;
+    --card-color: #f5f5f5;
+    --border-color: #ddd;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #003087;
+  }
+  
+  nav ul {
+  
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  nav ul li a.active {
+    color: #0061ff;
+    font-weight: bold;
+  }
+  
+  .btn-register {
+    background-color: #0061ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 50px;
+    flex-wrap: wrap;
+    background-color: #fefefe;
+  }
+  
+  .hero-text {
+    flex: 1 1 450px;
+    padding: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    color: #0061ff;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .hero-text .btns {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-primary {
+    background-color: #0061ff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-secondary {
+    background-color: #eaf1ff;
+    color: #0061ff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero-image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 380px;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 20px;
+      justify-content: center;
+    }
+  
+    nav ul {
+      justify-content: center;
+    }
+  
+    .hero {
+      padding: 50px 20px;
+      text-align: center;
+      flex-direction: column-reverse;
+    }
+  
+    .hero-text {
+      padding: 0;
+    }
+  
+    .hero-text h1 {
+      font-size: 28px;
+    }
+  
+    .hero-text p {
+      font-size: 16px;
+    }
+  
+    .hero-image img {
+      max-width: 300px;
+    }
+  }

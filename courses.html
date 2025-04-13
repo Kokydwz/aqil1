@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <!-- تعطيل تكبير وتصغير الصفحة -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>منصة السادس</title>
+
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="style2.css">
+
+
+</head>
+<body>
+  <header>
+    <div class="site-title" onclick="navigate('home')" class="logo"> منصة الاستاذ عقيل</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="courses.html" class="active">الدورات</a></li>
+        <li><a href="exam.html">الامتحانات</a></li>
+      </ul>
+    </nav>
+    <a href="dev.html" class="btn-register">المطور </a>
+    </div>
+  </header>
+
+  <div id="homePage" class="page active">
+    <div class="teachers-grid" id="teachersGrid"></div>
+  </div>
+
+  <div id="classesPage" class="page">
+    <div class="classes-page">
+      <button class="back-button" onclick="navigate('home')">← الرجوع للمدرسين</button>
+      <div class="teacher-info">
+        <img id="teacherImage" class="teacher-img-lg">
+        <div>
+          <h2 id="teacherName"></h2>
+        </div>
+      </div>
+      <div class="classes-list" id="classesList"></div>
+    </div>
+  </div>
+
+  <div id="videoPage" class="page">
+    <div class="video-page">
+      <div class="video-container">
+        <!-- مشغل Plyr -->
+        <video id="player" class="plyr__video-embed" playsinline controls></video>
+      </div>
+      <div class="video-details">
+        <h2 id="videoTitle"></h2>
+        <p id="videoDescription"></p>
+        <button class="back-button" onclick="navigate('classes')">العودة للفصول</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
