@@ -25,22 +25,6 @@
     line-height: 1.6;
   }
 
-  .page {
-    display: none;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .page.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
 
   header {
     display: flex;
@@ -67,7 +51,14 @@
     flex-wrap: wrap;
     gap: 25px;
   }
-  
+  .btn-register {
+    background-color: #0061ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
   nav ul li a {
     text-decoration: none;
     color: #333;
@@ -79,16 +70,25 @@
     font-weight: bold;
   }
   
-  .btn-register {
-    background-color: #0061ff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
+  .page {
+    display: none;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .site-title {
+  .page.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+
+ .site-title {
     color: var(--primary);
     font-size: 1.8rem;
     cursor: pointer;
